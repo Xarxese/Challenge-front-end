@@ -1,0 +1,161 @@
+
+@media screen and (min-width: 1442px){
+    header{
+        background-size: cover;
+    }
+}
+@media screen and (min-width: 0px) and (max-width:800px) {
+    header{
+        padding-left: 4vh;
+        padding-right: 4vh;
+        padding-top: 4vh;
+        padding-bottom: 11vh;
+        background-image: url(/images/mobile/image-hero.jpg);
+        background-size: cover;
+        .menu{
+            align-items: baseline;
+            nav{
+                display: none;
+            }
+            .burger{
+                display: flex;
+            }
+            .responsive{
+                display: flex;
+                position: absolute;
+                flex-direction: column;
+                background-color: black;
+                width: 100%;
+                height: 100%;
+                left: 0;
+                top: 0;
+                padding-top: 30vh;
+                li{
+                    font-family: 'Josefin Sans', sans-serif;
+                    text-transform: uppercase;
+                    font-weight: lighter;
+                    font-size: 1.7em;
+                    position: relative;
+                    padding: 10px 0;
+                    width: min-content;
+                    &:hover{
+                        cursor: pointer;
+                    }
+                    &:hover:after { 
+                        width: 100%; 
+                        left: 0; 
+                    }
+                    &:after{
+                        content: "";
+                        position: absolute;
+                        bottom: 0;
+                        left: 100%;
+                        display: block;
+                        background: none repeat scroll 0 0 transparent;
+                        height: 3px;
+                        border-radius: 5px solid;
+                        width: 0;
+                        background: #fff;
+                        transition: width 0.3s ease 0s, left 0.3s ease 0s;   
+                    }
+                }
+            }
+        }
+        h1{
+            margin-top: 22vh;
+            margin-bottom: 13vh;
+            width: auto;
+            font-size: revert;
+        }
+    }
+    section{
+        padding-left: 4vh;
+        padding-right: 4vh;
+        .about{
+            align-items: center;
+            flex-direction: column;
+            padding-top: 15vh;
+            padding-bottom: 10vh;
+            text-align: center;
+            img{
+                width: -moz-available;
+                width: -webkit-fill-available;
+            }
+            .card{
+                position: unset;
+                width: -moz-available;
+                width: -webkit-fill-available;
+                text-align: center;
+                padding: 3vh;
+                padding-top: 8vh;
+                h2{
+                    font-size: 1.7em;
+                    margin-bottom: 3vh;
+                }
+                p{
+                    line-height: 4vh;
+                }
+            }
+        }
+        .creations{
+            .creation-title{
+                position: relative;
+                justify-content: center;
+                button{
+                    position: absolute;
+                    top: 180vh;
+                }h2{
+                    font-size: 1.8em;
+                }
+            }
+            img{
+                width: 100%;
+            }
+            .mosaic{
+                h3{
+                    width: 44%;
+                    bottom: 3vh;
+                    left: 3vh;
+                    font-size: revert;
+                }
+            }
+
+        }
+
+    }
+    footer{
+        padding-left: 4vh;
+        padding-right: 4vh;
+        padding-top: 7vh;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 23vh;
+        
+        .menu-footer{
+            align-items: center;
+            nav {
+                margin-top: 5vh;
+                flex-direction: column;
+                align-items: center;
+            }
+            li{
+                margin-right: 0;
+            }
+        } 
+        .social{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 5vh;
+        }
+        
+    }
+}
+
+@media screen and (min-width: 412px) and (max-width:500px) {
+    .creation-title{
+        button{
+            top: 165vh !important;
+        }
+    }
+}

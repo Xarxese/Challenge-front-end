@@ -1,0 +1,50 @@
+.menu{
+    font-weight: bold;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    h2{
+        font-family: 'Alata', sans-serif;
+        font-size: 5vh;
+        letter-spacing: 0;
+    }nav{
+        display: flex;
+        
+    }li{
+        position: relative;
+        margin-left: 4vh;
+        padding: 10px 0;
+        font-size: 15px;
+        &:hover{
+            cursor: pointer;
+        }
+        &:hover:after { 
+            width: 100%; 
+            left: 0; 
+        }
+        &:after{
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            display: block;
+            background: none repeat scroll 0 0 transparent;
+            height: 3px;
+            border-radius: 5px solid;
+            width: 0;
+            background: #fff;
+            transition: width 0.3s ease 0s, left 0.3s ease 0s;   
+          }
+    }
+    .close{
+        display:none;
+        position: absolute;
+        z-index: 1;
+        right: 4vh;
+        top: 7vh;
+    }
+    .burger{
+        display: none;
+    }
+}

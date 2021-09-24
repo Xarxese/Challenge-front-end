@@ -1,0 +1,24 @@
+header{
+    
+    background-image: url(/images/desktop/image-hero.jpg);
+    background-repeat: no-repeat;
+    padding-left: 19vh;
+    padding-right: 19vh;
+    padding-top: 7vh;
+    padding-bottom: 5vh;
+    color: $white-color;
+}h1{
+    text-transform: uppercase;
+    font-weight: lighter;
+    font-size: 3.5em;
+    border: 3px solid white;
+    display: flex;
+    padding: 3vh;
+    padding-top: 5vh;
+    padding-right: 7vh;
+    padding-left: 4vh;
+    margin-top: 10vh;
+    margin-bottom: 11vh;
+    width: 60vh;
+    line-height: 8vh;
+}

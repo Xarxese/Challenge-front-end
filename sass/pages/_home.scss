@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    // 
+}
+p, .menu,.menu-footer,button {
+    font-size: 15px;
+    font-family: 'Alata', sans-serif;
+}
+h1,h2,h3{
+    font-family: 'Josefin Sans', sans-serif;
+}
+body{
+    display: flex;
+    flex-direction: column;
+}
+section{
+    padding-left: 19vh;
+    padding-right: 19vh;
+}
+.about{
+    display: flex;
+    align-items: flex-end;
+    padding-top: 19vh;
+    padding-bottom: 19vh;
+    .card{
+        width: 31%;
+        padding: 12vh;
+        padding-bottom: 0;
+        left: 51%;
+        position: absolute;
+        background-color: $white-color;
+        h2{
+            color: $black-color;
+            text-transform: uppercase;
+            font-weight: lighter;
+            font-size: 2.5em;
+            margin-bottom: 5vh;
+        }
+        p{
+            color: $VeryDark-color;
+        }
+    }
+}
+
+.creations{
+    display: flex;
+    flex-direction: column;
+    .creation-title{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        h2{
+            color: $black-color;
+            text-transform: uppercase;
+            font-weight: lighter;
+            font-size: 2.5em;
+        }
+
+    }
+    .mosaic{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        margin-top: 8vh;
+        img{
+            filter: brightness(75%);
+        }
+        article{
+            position: relative;
+            margin-bottom: 2vh;
+            &:hover{
+                opacity: 0.5;
+            }
+        }
+        h3{
+            color: $white-color;
+            text-transform: uppercase;
+            font-size: 1.5em;
+            position: absolute;
+            width: 70%;
+            bottom: 5vh;
+            left: 5vh;
+            z-index: 1;
+        }
+
+    }
+}
+

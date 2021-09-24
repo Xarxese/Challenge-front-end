@@ -1,0 +1,443 @@
+button {
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 0.9vh;
+  padding: 2vh;
+  padding-left: 7vh;
+  padding-right: 7vh;
+  background-color: #fff0;
+  border: 2px solid black;
+  border-radius: 2px;
+}
+button:hover {
+  cursor: pointer;
+  background-color: black;
+  color: white;
+}
+
+footer {
+  display: flex;
+  background-color: black;
+  margin-top: 19vh;
+  padding: 19vh;
+  padding-bottom: 2vh;
+  padding-top: 5vh;
+  color: white;
+  justify-content: space-between;
+}
+footer p {
+  color: dimgray;
+  padding: 10px 0;
+}
+
+.icon {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 0.5vh;
+}
+.icon a {
+  position: relative;
+  padding: 10px 0;
+}
+.icon a:hover {
+  cursor: pointer;
+}
+.icon a:hover:after {
+  width: 50%;
+  left: 20;
+}
+.icon a:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  display: block;
+  background: none repeat scroll 0 0 transparent;
+  height: 3px;
+  border-radius: 5px solid;
+  width: 0;
+  background: #fff;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+}
+.icon img {
+  margin-left: 3vh;
+}
+
+.menu-footer {
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.menu-footer h2 {
+  font-family: "Alata", sans-serif;
+  font-size: 5vh;
+  letter-spacing: 0;
+  line-height: 28px;
+}
+.menu-footer nav {
+  display: flex;
+}
+.menu-footer li {
+  position: relative;
+  margin-right: 5vh;
+  padding: 10px 0;
+  font-size: 15px;
+}
+.menu-footer li:hover {
+  cursor: pointer;
+}
+.menu-footer li:hover:after {
+  width: 100%;
+  left: 0;
+}
+.menu-footer li:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  display: block;
+  background: none repeat scroll 0 0 transparent;
+  height: 3px;
+  border-radius: 5px solid;
+  width: 0;
+  background: #fff;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  background-color: black;
+  color: white;
+}
+
+.attribution a {
+  color: #3e52a3;
+}
+
+header {
+  background-image: url(/images/desktop/image-hero.jpg);
+  background-repeat: no-repeat;
+  padding-left: 19vh;
+  padding-right: 19vh;
+  padding-top: 7vh;
+  padding-bottom: 5vh;
+  color: white;
+}
+
+h1 {
+  text-transform: uppercase;
+  font-weight: lighter;
+  font-size: 3.5em;
+  border: 3px solid white;
+  display: flex;
+  padding: 3vh;
+  padding-top: 5vh;
+  padding-right: 7vh;
+  padding-left: 4vh;
+  margin-top: 10vh;
+  margin-bottom: 11vh;
+  width: 60vh;
+  line-height: 8vh;
+}
+
+.menu {
+  font-weight: bold;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.menu h2 {
+  font-family: "Alata", sans-serif;
+  font-size: 5vh;
+  letter-spacing: 0;
+}
+.menu nav {
+  display: flex;
+}
+.menu li {
+  position: relative;
+  margin-left: 4vh;
+  padding: 10px 0;
+  font-size: 15px;
+}
+.menu li:hover {
+  cursor: pointer;
+}
+.menu li:hover:after {
+  width: 100%;
+  left: 0;
+}
+.menu li:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  display: block;
+  background: none repeat scroll 0 0 transparent;
+  height: 3px;
+  border-radius: 5px solid;
+  width: 0;
+  background: #fff;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+}
+.menu .close {
+  display: none;
+  position: absolute;
+  z-index: 1;
+  right: 4vh;
+  top: 7vh;
+}
+.menu .burger {
+  display: none;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+p, .menu, .menu-footer, button {
+  font-size: 15px;
+  font-family: "Alata", sans-serif;
+}
+
+h1, h2, h3 {
+  font-family: "Josefin Sans", sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+section {
+  padding-left: 19vh;
+  padding-right: 19vh;
+}
+
+.about {
+  display: flex;
+  align-items: flex-end;
+  padding-top: 19vh;
+  padding-bottom: 19vh;
+}
+.about .card {
+  width: 31%;
+  padding: 12vh;
+  padding-bottom: 0;
+  left: 51%;
+  position: absolute;
+  background-color: white;
+}
+.about .card h2 {
+  color: black;
+  text-transform: uppercase;
+  font-weight: lighter;
+  font-size: 2.5em;
+  margin-bottom: 5vh;
+}
+.about .card p {
+  color: dimgray;
+}
+
+.creations {
+  display: flex;
+  flex-direction: column;
+}
+.creations .creation-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.creations .creation-title h2 {
+  color: black;
+  text-transform: uppercase;
+  font-weight: lighter;
+  font-size: 2.5em;
+}
+.creations .mosaic {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  margin-top: 8vh;
+}
+.creations .mosaic img {
+  filter: brightness(75%);
+}
+.creations .mosaic article {
+  position: relative;
+  margin-bottom: 2vh;
+}
+.creations .mosaic article:hover {
+  opacity: 0.5;
+}
+.creations .mosaic h3 {
+  color: white;
+  text-transform: uppercase;
+  font-size: 1.5em;
+  position: absolute;
+  width: 70%;
+  bottom: 5vh;
+  left: 5vh;
+  z-index: 1;
+}
+
+@media screen and (min-width: 1442px) {
+  header {
+    background-size: cover;
+  }
+}
+@media screen and (min-width: 0px) and (max-width: 800px) {
+  header {
+    padding-left: 4vh;
+    padding-right: 4vh;
+    padding-top: 4vh;
+    padding-bottom: 11vh;
+    background-image: url(/images/mobile/image-hero.jpg);
+    background-size: cover;
+  }
+  header .menu {
+    align-items: baseline;
+  }
+  header .menu nav {
+    display: none;
+  }
+  header .menu .burger {
+    display: flex;
+  }
+  header .menu .responsive {
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    padding-top: 30vh;
+  }
+  header .menu .responsive li {
+    font-family: "Josefin Sans", sans-serif;
+    text-transform: uppercase;
+    font-weight: lighter;
+    font-size: 1.7em;
+    position: relative;
+    padding: 10px 0;
+    width: min-content;
+  }
+  header .menu .responsive li:hover {
+    cursor: pointer;
+  }
+  header .menu .responsive li:hover:after {
+    width: 100%;
+    left: 0;
+  }
+  header .menu .responsive li:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 100%;
+    display: block;
+    background: none repeat scroll 0 0 transparent;
+    height: 3px;
+    border-radius: 5px solid;
+    width: 0;
+    background: #fff;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  }
+  header h1 {
+    margin-top: 22vh;
+    margin-bottom: 13vh;
+    width: auto;
+    font-size: revert;
+  }
+
+  section {
+    padding-left: 4vh;
+    padding-right: 4vh;
+  }
+  section .about {
+    align-items: center;
+    flex-direction: column;
+    padding-top: 15vh;
+    padding-bottom: 10vh;
+    text-align: center;
+  }
+  section .about img {
+    width: -moz-available;
+    width: -webkit-fill-available;
+  }
+  section .about .card {
+    position: unset;
+    width: -moz-available;
+    width: -webkit-fill-available;
+    text-align: center;
+    padding: 3vh;
+    padding-top: 8vh;
+  }
+  section .about .card h2 {
+    font-size: 1.7em;
+    margin-bottom: 3vh;
+  }
+  section .about .card p {
+    line-height: 4vh;
+  }
+  section .creations .creation-title {
+    position: relative;
+    justify-content: center;
+  }
+  section .creations .creation-title button {
+    position: absolute;
+    top: 180vh;
+  }
+  section .creations .creation-title h2 {
+    font-size: 1.8em;
+  }
+  section .creations img {
+    width: 100%;
+  }
+  section .creations .mosaic h3 {
+    width: 44%;
+    bottom: 3vh;
+    left: 3vh;
+    font-size: revert;
+  }
+
+  footer {
+    padding-left: 4vh;
+    padding-right: 4vh;
+    padding-top: 7vh;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 23vh;
+  }
+  footer .menu-footer {
+    align-items: center;
+  }
+  footer .menu-footer nav {
+    margin-top: 5vh;
+    flex-direction: column;
+    align-items: center;
+  }
+  footer .menu-footer li {
+    margin-right: 0;
+  }
+  footer .social {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5vh;
+  }
+}
+@media screen and (min-width: 412px) and (max-width: 500px) {
+  .creation-title button {
+    top: 165vh !important;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

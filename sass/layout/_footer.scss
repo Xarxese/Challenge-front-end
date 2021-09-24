@@ -1,0 +1,98 @@
+
+footer{
+    display: flex;
+    background-color: $black-color;
+    margin-top: 19vh;
+    padding: 19vh;
+        padding-bottom: 2vh;
+        padding-top: 5vh;
+    color: $white-color;
+    justify-content: space-between;
+    p{
+        color: $VeryDark-color;
+        padding: 10px 0;
+    }
+}
+
+.icon{
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 0.5vh;
+    a{
+        position: relative;
+        padding: 10px 0;
+        &:hover{
+            cursor: pointer;
+        }
+        &:hover:after {
+            width: 50%; 
+            left: 20; 
+        }
+        &:after{
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            display: block;
+            background: none repeat scroll 0 0 transparent;
+            height: 3px;
+            border-radius: 5px solid;
+            width: 0;
+            background: #fff;
+            transition: width 0.3s ease 0s, left 0.3s ease 0s;   
+          }
+    }
+    img{
+        margin-left: 3vh;
+    }
+
+}
+
+.menu-footer{
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    h2{
+        font-family: 'Alata', sans-serif;
+        font-size: 5vh;
+        letter-spacing: 0;
+        line-height: 28px;
+    }nav{
+        display: flex;
+    }li{
+        position: relative;
+        margin-right: 5vh;
+        padding: 10px 0;
+        font-size: 15px;
+        &:hover{
+            cursor: pointer;
+        }
+        &:hover:after { 
+            width: 100%; 
+            left: 0; 
+        }
+        &:after{
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            display: block;
+            background: none repeat scroll 0 0 transparent;
+            height: 3px;
+            border-radius: 5px solid;
+            width: 0;
+            background: #fff;
+            transition: width 0.3s ease 0s, left 0.3s ease 0s;   
+          }
+    }
+}
+
+.attribution { 
+    font-size: 11px; text-align: center; 
+    background-color: black; 
+    color: white;}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
