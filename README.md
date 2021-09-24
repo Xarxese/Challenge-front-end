@@ -16,8 +16,8 @@ Thanks for checking out this front-end coding challenge.
 
 ## SCREENSHOT
 - Desktop
-![](./Screenshot 2021-09-24 at 18-14-59 Frontend Mentor Loopstudios landing page.png)
+![Screenshot](Screenshot.png)
 - Mobile
-![](./Screenshot 2021-09-24 at 18-15-55 Frontend Mentor Loopstudios landing page.png)
+![Screenshot](Screenshot2.png)
 **Have fun building!** 🚀
 # Challenge-front-end
