@@ -16,8 +16,12 @@ Thanks for checking out this front-end coding challenge.
 
 ## SCREENSHOT
 - Desktop
+
 ![Screenshot](Screenshot.png)
+
 - Mobile
+
 ![Screenshot](Screenshot2.png)
+
 **Have fun building!** 🚀
 # Challenge-front-end
